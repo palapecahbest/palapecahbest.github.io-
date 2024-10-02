@@ -1,0 +1,418 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-img-container {
+    margin: 0;
+    padding: 1;
+}
+
+.img-1 {
+    width: 56vh;
+    height: 80%;
+    position: relative;
+
+}
+
+.text {
+    position: absolute;
+    text-align: start;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 15px;
+    margin: 5px;
+}
+
+h1 {
+    margin-bottom: 50px;
+    animation: zoom 1s linear 0.5ms 1 forwards;
+}
+
+h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    animation: goyang 1s ease-in-out 0.5ms 3 none;
+}
+
+h4 {
+    animation: zoom-1 1s ease 1ms 1 none;
+    
+}
+
+/* animasi index.html */
+@keyframes zoom {
+    0% {
+        font-size: 0px;
+    }
+
+    100% {
+        font-size: 30px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+
+}
+
+@keyframes goyang {
+    0% {
+        transform: rotate(0deg);
+        transform: scale(0);
+
+    }
+
+    25% {
+        transform: rotate(10deg);
+
+
+    }
+
+    50% {
+        transform: rotate(-10deg);
+
+
+    }
+
+    75% {
+        transform: rotate(10deg);
+
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+        transform: scale(1);
+    }
+}
+
+@keyframes zoom-1 {
+    0% {
+        transform: scale(0);
+        font-size: 0px;
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+.container-click {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+a {
+    left: 40%;
+    top: 80%;
+    bottom: 50%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    height: 10px;
+    text-decoration: none;
+    box-shadow: 10px 10px 5px rgb(69, 69, 70);
+}
+
+/* penjelasan.html */
+.container-img {
+    position: relative;
+}
+
+.images-2 {
+    width: 56vh;
+    height: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: besar-kecil 10s ease-in 1s infinite normal none;
+}
+
+.container-teks {
+    position: absolute;
+    top: ;
+    bottom: 50vh;
+    margin: 5vh;
+    align-items: center;
+}
+
+.teks-1 {
+    font-size: 15px;
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    animation: ketik 10s steps(222) forwards, berkedip 0.5s infinite;
+    overflow: hidden;
+    border-right: 2px rgb(0, 0, 0) solid;
+    white-space: nowrap;
+    width: 100%;
+}
+.teks-1 ::after{
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+} 
+
+
+
+/*footer */
+.container-footer{
+    background-color: white;
+}
+.container-footer a{
+    animation: gerak 4s ease-in-out 1s forwards ;
+    animation-fill-mode: ;
+}
+@keyframes gerak {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+    
+}
+.video-container{
+    justify-content: center;
+    display: flex;   
+    align-items: center;
+}
+video{
+    width:100vw;
+  
+}
+h3{
+    position:absolute;
+    top: 80%;
+    font-size: 2rem;
+}
+
+/* Animasi Pembesaran */
+@keyframes besar-kecil {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
+/* Animasi Mesin Tik */
+@keyframes ketik {
+    from {
+        width: 0;
+        font-size: 0;
+        
+    }
+
+    to {
+        width: 100%;
+        font-size: 1rem;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+/* Animasi Kursor Berkedip */
+@keyframes berkedip {
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: rgb(0, 0, 0);
+    }
+}
+/* animasi responsive*/
+@keyframes ketik-1 {
+    from {
+        width: 0;
+        font-size: 0;
+        
+    }
+
+    to {
+        width: 100%;
+        font-size: 2rem;
+        margin: 0 -70px 0 70px;
+    }
+    
+}
+
+@keyframes ketik-2{
+    from {
+        width: 0;
+        font-size: 0;
+        
+    }
+
+    to {
+        width: 100%;
+        font-size: 3rem;
+        margin: 0 -50px 0 50px;
+    }
+}
+@keyframes ketik-3 {
+    from {
+        width: 0;
+        font-size: 0;
+        
+    }
+
+    to {
+        width: 100%;
+        font-size: 1rem;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+/* responsive */
+@media screen and (min-width:720px) {
+    .img-1 {
+       min-width: 720px;
+        height: 90vh;
+        position: relative;
+    
+    }
+    
+    .text {
+        position: absolute;
+        text-align: start;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: aliceblue;
+        font-size: 30px;
+        margin: 5px;
+    }
+    
+    h1 {
+        margin-bottom: 50px;
+        animation: zoom 1s linear 0.5ms 1 forwards;
+        text-align: center;
+    }
+    a {
+       top: 50%;
+        position: absolute;
+        padding: 20px 40px;
+        font-size: 2rem;
+        text-decoration: none;
+        height: 55px;
+    }
+    .teks-1 {
+        font-size: 2rem;
+        animation: ketik-1 10s steps(222) forwards, berkedip 0.5s infinite;
+    }
+    .images-2 {
+        width: 56vh;
+        height: 10%;
+    }    
+}
+@media screen (max-width:721px) {
+    .img-1 {
+        min-width: 720px;
+         height: 90vh;
+         position: relative;
+     
+     }
+     
+     .text {
+         position: absolute;
+         text-align: start;
+         bottom: 15%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         color: aliceblue;
+         font-size: 30px;
+         margin: 5px;
+     }
+     
+     h1 {
+         margin-bottom: 50px;
+         animation: zoom 1s linear 0.5ms 1 forwards;
+         text-align: center;
+     }
+     a {
+        top: 50%;
+         position: absolute;
+         padding: 20px 40px;
+         font-size: 2rem;
+         text-decoration: none;
+         height: 30px;
+     }
+     .teks-1 {
+         font-size: 2rem;
+         animation: ketik-1 10s steps(222) forwards, berkedip 0.5s infinite;
+     }
+     .images-2 {
+         width: 56vh;
+         height: 10%;
+     } 
+    
+}
+@media screen and (min-width:1080px ) and (max-height:2448px){
+    .img-1 {
+        max-width:100%;
+        height: 2448px;
+         position: relative;
+        
+     
+     }
+     
+     .text {
+         position: absolute;
+         text-align: start;
+         bottom: 15%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         color: rgb(255, 255, 255);
+         font-size: 45px;
+         margin: 5px;
+     }
+     
+     h1 {
+         margin-bottom: 50px;
+         animation: zoom-1 1s linear 0.5ms 1 forwards;
+         text-align: center;
+     }
+     a {
+        top: 55%;
+         position: absolute;
+         padding: 20px 30px;
+         font-size: 3rem;
+         text-decoration: none;
+         height: 100px;
+         
+     }
+     .teks-1 {
+         font-size: 2rem;
+         animation: ketik-2 15s steps(222) forwards, berkedip 0.5s infinite;
+     }
+     .images-2 {
+         width: 56vh;
+         height: 10%;
+     }  
+    h3{
+        top:100%;
+        color: whitesmoke;
+        font-size: 3rem;
+   
+    }
+}
